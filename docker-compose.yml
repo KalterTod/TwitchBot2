@@ -1,0 +1,12 @@
+version: "3.9"
+services:
+    twitchbot:
+        build: .
+        ports:
+         - "5000:5000"
+        environment:
+         - TMI_TOKEN
+         - CLIENT_ID
+         - BOT_NICK
+         - BOT_PREFIX
+         - CHANNEL
